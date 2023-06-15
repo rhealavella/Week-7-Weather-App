@@ -4,3 +4,36 @@ h1 {
 #city-name {
   text-align: left;
 }
+h1 {
+  display: block;
+  text-align: center;
+}
+h2 {
+  display: block;
+  text-align: center;
+}
+h3 {
+  display: block;
+  text-align: center;
+}
+#weather-icon {
+  display: block;
+  text-align: center;
+  font-size: 80pt;
+}
+#high {
+  display: block;
+  text-align: right;
+}
+#wind {
+  display: block;
+  text-align: center;
+}
+#humidity {
+  display: block;
+  text-align: center;
+}
+#precipitation {
+  display: block;
+  text-align: center;
+}
