@@ -1,39 +1,64 @@
-h1 {
-  color: blue;
+#weather-app {
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
 }
-#city-name {
-  text-align: left;
-}
-h1 {
+#city {
   display: block;
   text-align: center;
+  font-size: 40pt;
+  font-family: Sora ExtraBold 800;
 }
-h2 {
+#temperature {
   display: block;
   text-align: center;
+  font-size: 35pt;
+  font-family: Sora Bold 800;
 }
-h3 {
+#description {
   display: block;
   text-align: center;
+  font-size: 30pt;
+  font-family: Sora Bold 800;
 }
 #weather-icon {
   display: block;
   text-align: center;
   font-size: 80pt;
+  padding: 20px;
 }
 #high {
   display: block;
   text-align: right;
+  font-family: Sora;
+  padding-bottom: 20px;
+}
+#low {
+  display: block;
+  text-align: left;
+  font-family: Sora;
+  padding-bottom: 20px;
 }
 #wind {
   display: block;
   text-align: center;
+  font-family: Sora;
 }
 #humidity {
   display: block;
   text-align: center;
+  font-family: Sora;
 }
 #precipitation {
   display: block;
   text-align: center;
+  font-family: Sora;
+}
+small {
+  display: block;
+  text-align: center;
+  margin: 50px auto;
+  font-family: Sora;
 }
