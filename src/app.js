@@ -35,6 +35,11 @@ function displayTemp(response) {
   let feelsLike = Math.round(response.data.temperature.feels_like);
   let feelsLikeElement = document.querySelector("#feels-like");
   let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+  );
   dateElement.innerHTML = formatDate(response.data.time * 1000);
   feelsLikeElement.innerHTML = `Feels Like: ${feelsLike}˚C`;
   humidityElement.innerHTML = `Humidity: ${humidity}%`;
@@ -46,7 +51,7 @@ function displayTemp(response) {
 }
 
 let key = "e9ebt40ac8468b03ff07a7b93c22oc3b";
-let query = "London";
+let query = "Rome";
 let units = "metric";
 let url = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${key}&units=${units}`;
 axios.get(url).then(displayTemp);
