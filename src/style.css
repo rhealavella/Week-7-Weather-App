@@ -4,6 +4,7 @@
   padding: 20px;
   border: 1px solid lightgray;
   border-radius: 10px;
+  text-transform: capitalize;
 }
 #city {
   display: block;
