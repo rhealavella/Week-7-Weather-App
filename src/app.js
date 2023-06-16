@@ -70,5 +70,3 @@ axios.get(url).then(displayTemp);
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-search("Rome");
