@@ -15,7 +15,7 @@
 #city {
   display: block;
   text-align: center;
-  font-size: 30pt;
+  font-size: 25pt;
   font-family: Sora;
 }
 #temperature {
@@ -27,7 +27,7 @@
 #description {
   display: block;
   text-align: center;
-  font-size: 20pt;
+  font-size: 15pt;
   font-family: Sora;
 }
 #icon {
@@ -37,18 +37,7 @@
   padding: 20px;
   margin: 0 auto;
 }
-#high {
-  display: block;
-  text-align: right;
-  font-family: Sora;
-  padding-bottom: 20px;
-}
-#low {
-  display: block;
-  text-align: left;
-  font-family: Sora;
-  padding-bottom: 20px;
-}
+
 #wind {
   display: block;
   text-align: center;

@@ -21,7 +21,30 @@
   </head>
   <body>
     <div class="container" id="weather-app">
+      <form id="search-form" class="mb-3">
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="search"
+              placeholder="Type a city.."
+              class="form-control"
+              id="city-input"
+              autocomplete="off"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              id="search-button"
+              type="submit"
+              value="Search"
+              class="btn btn-primary w-100"
+            />
+          </div>
+        </div>
+      </form>
+
       <p id="date">Thursday 12:00</p>
+
       <h1 id="city">Toronto</h1>
       <h2 id="temperature">20˚C</h2>
       <h3 id="description">Clear</h3>
@@ -30,10 +53,6 @@
         src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
       />
       <div class="container">
-        <div class="row">
-          <div class="col" id="high">H: 20˚C</div>
-          <div class="col" id="low">L: 10˚C</div>
-        </div>
         <div class="row">
           <div class="col" id="wind">Wind: 5km/hr</div>
           <div class="col" id="humidity">Humidity: 60%</div>

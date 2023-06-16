@@ -50,8 +50,25 @@ function displayTemp(response) {
     Math.round(response.data.temperature.current) + "˚C";
 }
 
+function search(query) {
+  let key = "e9ebt40ac8468b03ff07a7b93c22oc3b";
+  let units = "metric";
+  let url = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${key}&units=${units}`;
+  axios.get(url).then(displayTemp);
+}
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
 let key = "e9ebt40ac8468b03ff07a7b93c22oc3b";
-let query = "Rome";
 let units = "metric";
+let query = "Barcelona";
 let url = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${key}&units=${units}`;
 axios.get(url).then(displayTemp);
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+search("Rome");
