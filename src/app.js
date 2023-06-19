@@ -23,6 +23,7 @@ function formatDate(timestamp) {
 }
 
 function displayTemp(response) {
+  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -62,12 +63,6 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-let key = "e9ebt40ac8468b03ff07a7b93c22oc3b";
-let units = "metric";
-let query = "";
-let url = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${key}&units=${units}`;
-axios.get(url).then(displayTemp);
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
@@ -86,7 +81,7 @@ function displayCelsiusTemp(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemp);
 }
 
-let farenheitLink = document.querySelector("#farenheit");
+let farenheitLink = document.querySelector("#fahrenheit");
 farenheitLink.addEventListener("click", displayFarenheitTemp);
 
 let celsiusLink = document.querySelector("#celsius");
